@@ -64,6 +64,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  
 }
 
 a {
@@ -756,7 +757,17 @@ section,
     font-size: 20px;
   }
 }
-
+.btn {
+  border: 1px solid #fff;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.btn: hover{
+  color: orange;
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
