@@ -35,8 +35,32 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+body{
+  background-color: black;
+  color: white;
+}
 
-<body class="portfolio-page">
+.dark-mode {
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  --accent-color: #fff;
+  text-shadow: 4px 4px 7px #000000;"
+}
+.toggle{
+  border-radius: 10px;
+  background-color: gray;
+  color: #fff;
+}
+.toggle-dark{
+  background-color: lightblue;
+  color:black;
+}
+
+</style>
+
+<body class="about-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -48,9 +72,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" >About</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <button class="toggle" id="upVote" onclick="myFunction()">  Light Mode</button>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -378,6 +403,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Dark Mode -->
+  <script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+  </script>
+  <!-- change active color Dark Mode -->
+  <script>
+    document.getElementById("upVote").addEventListener("click", () => {
+    event.target.classList.toggle("toggle-dark")
+    })
+  </script>
 
 </body>
 

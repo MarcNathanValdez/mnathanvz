@@ -62,9 +62,9 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
   
+  font-family: var(--default-font);
+   
 }
 
 a {
@@ -629,7 +629,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+
   padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
@@ -693,9 +693,10 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-.hero img {
+.hero hero-bg {
   position: absolute;
   inset: 0;
   display: block;
@@ -760,13 +761,18 @@ section,
 .btn {
   border: 1px solid #fff;
   color: white;
-  padding: 12px 30px;
+  padding: 12px 20px;
   cursor: pointer;
   font-size: 15px;
   margin-top: 15px;
+  letter-spacing: 2px;
 }
-.btn: hover{
-  color: orange;
+.btn:hover{
+  color: #fff;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
 }
 /*--------------------------------------------------------------
 # About Section
