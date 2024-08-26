@@ -45,13 +45,14 @@ body{
   background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
   background-attachment:fixed ;
   background-repeat: no-repeat;
-  --accent-color: #fff;
+  
   text-shadow: 4px 4px 7px #000000;"
 }
 .toggle{
   border-radius: 10px;
   background-color: gray;
   color: #fff;
+  margin-left: 20px;
 }
 .toggle-dark{
   background-color: lightblue;
@@ -75,7 +76,7 @@ body{
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
-          <li><button class="toggle" id="upVote" onclick="myFunction()">  Light Mode</button></li>
+          <li><button class="toggle" id="upVote" onclick="myFunction()" >  Light Mode</button></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -161,7 +162,7 @@ body{
 
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <form action="forms/php-email-form.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
             <div class="col-md-6">
