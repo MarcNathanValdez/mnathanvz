@@ -38,23 +38,44 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+body{
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  color: white;
+}
+.dark-mode {
+  background: black;
+  color: #fff;
+}
+.toggle{
+  border-radius: 7px;
+  background-color: #303030;
+  color: #fff;
+  margin-left: 4%;
+}
+.toggle-dark{
+  background-color: lightblue ;
+  color:black;
+}
 
-<body class="index-page">
+</style>
+
+<body class="about-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-         <a href="index.html" >
-        <img src="assets/img/logo.png" width="250" height="150">
+      <a href="index.html" >
+         <img src="assets/img/logo.png" width="250" height="150">
       </a>
-
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" >About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><button class="toggle" id="upVote" onclick="myFunction()"> Change Theme </button></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -66,7 +87,7 @@
 
     <!-- Hero Section -->
 
-    <section id="hero" class="hero section dark-background" style=" background: linear-gradient(to bottom, #09203f 20%, #537895 100%);  background-attachment:fixed; background-repeat: no-repeat;">
+    <section id="hero" class="hero section dark-background">
 
 
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
@@ -149,6 +170,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Dark Mode -->
+  <script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+  </script>
+  <!-- change active color Dark Mode -->
+  <script>
+    document.getElementById("upVote").addEventListener("click", () => {
+    event.target.classList.toggle("toggle-dark")
+    })
+  </script>
 
 </body>
 
