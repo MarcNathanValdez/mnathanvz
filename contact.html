@@ -45,15 +45,52 @@ body{
   background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
   background-attachment:fixed ;
   background-repeat: no-repeat;
-  
+  --accent-color: #fff;
   text-shadow: 4px 4px 7px #000000;"
+}
+.dark-mode .header {
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  --accent-color: #fff;
+  text-shadow: 4px 4px 7px #000000;"
+  padding: 5px;
+  box-shadow:
+    inset 0 -3em 3em rgb(0 0 0 / 20%),
+    0.3em 0.3em 1em rgb(192 192 192 / 40%);
+}
+.dark-mode .breadcrumbs {
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  --accent-color: #fff;
+  text-shadow: 4px 4px 7px #000000;"
+   padding: 5px;
+  box-shadow:
+    inset 0 -3em 3em rgb(0 0 0 / 20%),
+    0.3em 0.3em 1em rgb(192 192 192 / 40%);
+}
+.dark-mode .page-title {
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  --accent-color: #fff;
+  text-shadow: 4px 4px 7px #000000;"
+}
+.dark-mode .social-link {
+  background-color: gray;
+ 
+}
+.dark-mode .active-home {
+  color: gray;
+
 }
 .toggle{
   border-radius: 10px;
   background-color: gray;
   color: #fff;
-  margin-left: 20px;
 }
+
 .toggle-dark{
   background-color: lightblue;
   color:black;
@@ -101,7 +138,7 @@ body{
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active-home">Home</a></li>
             <li class="current">Contact</li>
           </ol>
         </div>
