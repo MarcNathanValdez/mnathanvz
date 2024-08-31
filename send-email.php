@@ -7,8 +7,8 @@ $message = $_POST["message"];
 
 require "vendor/autoload.php";
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
+use PHPMailer;
+use SMTP;
 
 $mail = new PHPMailer(true);
 
