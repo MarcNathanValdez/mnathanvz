@@ -143,36 +143,39 @@ body{
           </div><!-- End Info Item -->
 
         </div>
-        <!---
-        <form action="forms/php-email-form.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
-          <div class="row gy-4">
+        
+      <!-- Start of Email Form -->
+      
+    <form method="post" class="php-email-form" action="send-email.php" data-aos="fade-up" data-aos-delay="600">
+      <div class="row gy-4">
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
+        <div class="col-md-6">
+          <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        
+        <div class="col-md-6 ">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+        
+        <div class="col-md-12">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
 
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
+        <div class="col-md-12">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+          <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message"  required></textarea>
+        </div>
+        
+        <br>
+        <div class="col-md-12 text-center">
+          <button type="submit">Send</button>
+        </div>
 
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form> End Contact Form -->
+      </div>
+    </form>
+    <!-- End Contact Form -->
 
       </div>
 
