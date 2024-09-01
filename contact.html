@@ -156,11 +156,14 @@ body{
         </div>
 
         <div class="col-md-12">
+          
           <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message"  required></textarea>
         </div>
         
         <br>
         <div class="col-md-12 text-center">
+          <input type="hidden" name="_subject" value="New query submitted">
+          <input type="hidden" name="next" value=sent.html>
           <button type="submit">Send</button>
         </div>
 
