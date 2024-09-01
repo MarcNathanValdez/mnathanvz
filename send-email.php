@@ -11,7 +11,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 $mail = new PHPMailer(true);
-
+ 
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 $mail->isSMTP();
@@ -21,8 +21,8 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "marcnathanvaldez@gmail.com";
-$mail->Password = "xbqy jvhd bhio genm";
+$mail->Username = "you@example.com";
+$mail->Password = "password";
 
 $mail->setFrom($email, $name);
 $mail->addAddress("marcnathanvaldez@gmail.com", "Marc Nathaniel Valdez");
