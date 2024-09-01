@@ -5,10 +5,10 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-require "vendor/autoload.php";
+require "master/vendor/autoload.php";
 
-use master\PHPMailer\PHPMailer\PHPMailer;
-use master\PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
 $mail = new PHPMailer(true);
 
