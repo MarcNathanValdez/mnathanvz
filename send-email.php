@@ -34,3 +34,7 @@ $mail->send();
 
 header("Location: sent.html");
 ?>
+
+<input type="hidden" name="_subject" value="New query submitted">
+          <input type="hidden" name="cc" value="pqr@gmail.com">
+          <input type="hidden" name="_next" value="https://ruchibahl18.github.io/superlazycoder.github.io/thanks">

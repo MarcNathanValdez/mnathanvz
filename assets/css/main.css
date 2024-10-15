@@ -729,7 +729,6 @@ section,
   color: gray;
 }
 
-
 .toggle{
   border-radius: 7px;
   background-color:lightblue;
@@ -742,16 +741,6 @@ section,
   color:#fff;
 }
 
-label{
-  width: 500px;
-  height: 200px;
-  position: relative;
-  display: block;
-  background-color: #ebebeb;
-  border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0,.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-}
 
 /*--------------------------------------------------------------
 # Hero Section
