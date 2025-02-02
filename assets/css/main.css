@@ -1098,7 +1098,12 @@ section,
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
 }
-
+.current1{
+  color: #fff;
+}
+.current1 hover{
+  color: gray;
+}
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
