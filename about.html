@@ -33,6 +33,11 @@ body{
   background-color: black;
   color: white;
 }
+.dark-mode .footer {
+  background: linear-gradient(to bottom, #09203f 20%, #537895 100%);
+  --accent-color: #fff;
+  text-shadow: 4px 4px 7px #000000;"
+}
 
 
 </style>
@@ -42,16 +47,16 @@ body{
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" >
+      <a href="./index" >
          <img src="assets/img/logo.png" width="250" height="150">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./index">Home</a></li>
+          <li><a href="./about" class="active">About</a></li>
+          <li><a href="./portfolio">Portfolio</a></li>
+          <li><a href="./contact">Contact</a></li>
           <li><button class="toggle" id="upVote" onclick="myFunction()"> Change Theme </button></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -68,7 +73,7 @@ body{
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html" class="active-home">Home</a></li>
+            <li><a href="./index" class="active-home">Home</a></li>
             <li class="current" >About</li>
           </ol>
         </div>
@@ -80,36 +85,63 @@ body{
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4"><center>
-            <img src="assets/img/profile-img.png" width="300" height="300" class="img-fluid" alt=""></center>
+          <div class="col-lg-4">
+            <center>
+            <img src="assets/img/profile-img.png" width="300" height="300" class="img-fluid" alt="" style="text-align: center; background: rgba(255, 255, 255, .1); border: 2px solid rgba(255, 255, 255, .2); border-radius: 10px; margin: 5px;">
+            </center>
           </div>
           <div class="col-lg-8 content">
-            <h2 style="text-align: center;">UI/UX Designer &amp; Web Developer.</h2>
+            <h2 style="text-align: center; background: rgba(255, 255, 255, .1); border: 2px solid rgba(255, 255, 255, .2); border-radius: 10px; margin: 5px;">UI/UX Designer, Web Developer,Robot Operator, Computer Technician, Graphic Design, Video Editor, &amp; Computer Technician. </h2>
             <BR>
-            <!---
-            <div class="row">
+            
+            <div class="row" style=" background: rgba(255, 255, 255, .1); border: 2px solid rgba(255, 255, 255, .2); border-radius: 10px; margin: 5px;">
               <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17 June 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.mnathanvz.info</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 966 1380 019</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Caloocan City, Philippines</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                <ul></br>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Birthday:</strong> 
+                    <span>17 June 2000</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Website:</strong> 
+                      <span><br><a href="www.mnathanvz.info">www.mnathanvz.online</a></br>
+                
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Phone:</strong> 
+                    <span>+63 976 068 1812</span></li>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>City:</strong> 
+                    <span>Caloocan City, Metro Manila, Philippines</span>
+                  </li>
+                  
                 </ul>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate / 4th Year Level</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>Bachelor of Science in Information Technology</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>marcnathanvaldez@gmail.com</span></li>      
+              
+              <div class="col-lg-5">
+                <ul></br>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Age:</strong> <span>26</span>
+                  </li>         
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Course:</strong> 
+                    <span>Bachelor of Science in Information Technology</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong> 
+                    <span>marcnathanvaldez@gmail.com</span>
+                  </li>      
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Freelance:</strong> 
+                    <span style="color:lightgreen;">Available</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> 
+                    <strong>Fulltime:</strong> 
+                    <span style="color:lightgreen;">Available</span></li>
                 </ul>
               </div>
             </div>
-            --->
-            <p class="py-3" style="text-align: center; font-size: 18px;">
-             Hi, I'm Nathan. I worked as a freelance graphic designer for 1 year, during which time I honed my skills using Adobe Photoshop, Illustrator, Canvas, and Filmora Go. Aside from that, I applied to two BPO companies as a customer service representative. After spending a year in the BPO industry, I have developed invaluable skills as a customer support consultant as well as effective communication skills. Additionally, my experience as an IT professional has helped me become proficient in a variety of areas, such as being computer literate and having knowledge of programming languages such as HTML, CSS, Javascript, Java, PHP and Cisco Packet Tracer.
-            </p>
+            <br>
+           
           </div>
         </div>
 
@@ -133,28 +165,35 @@ body{
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="features-item">
               <i class="" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">HTML 5</a></h3>
+              <h3><a href="" class="stretched-link">GO HIGH LEVEL</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="" style="color: #ffbb2c;"></i>
+              <h3><a href="" class="stretched-link">HTML</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">JAVASCRIPT</a></h3>
+              <h3><a href="" class="stretched-link">CSS</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">PHP</a></h3>
+              <h3><a href="" class="stretched-link">JAVASCRIPT</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="features-item">
               <i class="" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">PYTHON</a></h3>
+              <h3><a href="" class="stretched-link">PHP</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
@@ -186,6 +225,13 @@ body{
             </div>
           </div><!-- End Feature Item -->
 
+           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="" style="color: #e361ff;"></i>
+              <h3><a href="" class="stretched-link">CAPCUT</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
             <div class="features-item">
               <i class="" style="color: #b2904f;"></i>
@@ -193,13 +239,15 @@ body{
             </div>
           </div><!-- End Feature Item -->
 
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="" style="color: #e361ff;"></i>
+              <h3><a href="" class="stretched-link">FACEBOOK AUTOMATION BOTCAKE</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
         </div>
-
       </div>
-
     </section><!-- /Interests Section -->
-
-   
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -216,13 +264,13 @@ body{
       </div><!-- End ACHIEVEMENT Title -->
      
       <div class="container">
-
+        
         <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+          
+           <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
-              <i class="" style="color: #5578ff;"></i>
-              <h3><a href="https://www.credly.com/badges/8dccd4fb-d12d-4c2b-901f-c765432dde6d" class="stretched-link"><img src="assets/img/cert/badge_Cybersecurity.png" width="250" height="230"><p style="margin-top: 20px; text-align: center;">Introduction to Packet Tracer</p></a></h3>
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/Introduction to Packet Tracer.pdf" download class="stretched-link"><img src="assets/img/cert/Introduction to Packet Tracer.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Introduction to Packet Tracer</p></a></h3>
             </div>
           </div><!-- End CERTIFICATES Item -->
 
@@ -236,9 +284,80 @@ body{
           <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="" style="color: #e80368;"></i>
-              <h3><a href="assets/doc/Introduction to Packet Tracer.pdf" download class="stretched-link"><img src="assets/img/cert/Introduction to Packet Tracer.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Introduction to Packet Tracer</p></a></h3>
+              <h3><a href="assets/doc/Valdez, Marc Nathaniel M. - Cloud Computing and DevOps.pdf" download class="stretched-link"><img src="assets/img/cert/cloud computing devops.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Cloud Computing and DevOps</p></a></h3>
             </div>
           </div><!-- End CERTIFICATES Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="" style="color: #5578ff;"></i>
+              <h3><a href="assets/doc/Endpoint Security.pdf" class="stretched-link"><img src="assets/img/cert/Endpoint Security.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Endpoint Security</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+             <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="" style="color: #5578ff;"></i>
+              <h3><a href="assets/doc/Ethical Hacker.pdf" class="stretched-link"><img src="assets/img/cert/Ethical Hacker.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Ethical Hacker</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+           <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/How to Counter-Act when Hacked.pdf" download class="stretched-link"><img src="assets/img/cert/How to Counter-Act when Hacked.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">How to Counter-Act when Hacked</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+            <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/Querying Fundamentals with MySQL Essentials for Beginners.pdf" download class="stretched-link"><img src="assets/img/cert/Querying Fundamentals with MySQL Essentials for Beginners.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Querying Fundamentals with MySQL Essentials for Beginners</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/PC Assembly & Disassembly.pdf" download class="stretched-link"><img src="assets/img/cert/PC Assembly & Disassembly.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">PC Assembly & Disassembly</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/Network Defense.pdf" download class="stretched-link"><img src="assets/img/cert/Network Defense.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Network Defense</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+           <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="https://wing-academy.thinkific.com/certificates/jisqcfqe1o" class="stretched-link"><img src="assets/img/cert/Basic Customer Service Representative Skills Training.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Basic Customer Service Representative Skills Training</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/InnerSparcRealtyCertificationRecognitionVideoMaking.pdf" class="stretched-link"><img src="assets/img/cert/InnerSparcRealtyCertification(1).jpg" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Certificate of Recognition in the Video Making Activity #1</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item -->   
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/Professionalism and Communication.pdf" class="stretched-link"><img src="assets/img/cert/Professionalism and Communication.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">Professionalism and Communication</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item --> 
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="" style="color: #e80368;"></i>
+              <h3><a href="assets/doc/certificate-mkt101-digital-advertising-strategy-foundations-63ebee96da30a43de9049b54.pdf" class="stretched-link"><img src="assets/img/cert/MKT101 - Digital Advertising Strategy Foundations.png" width="300" height="200"><p style="margin-top: 20px; text-align: center;">MKT101 - Digital Advertising Strategy Foundations</p></a></h3>
+            </div>
+          </div><!-- End CERTIFICATES Item --> 
+
         </div>
 
       </div>
